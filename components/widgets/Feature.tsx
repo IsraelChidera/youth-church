@@ -23,13 +23,13 @@ const Feature = () => {
         <section className='py-30'>
             <Container>
                 <div>
-                    <p className='mb-2 text-center font-semibold text-sm text-tertiary'>About us</p>
+                    <p className='mb-2 text-center font-semibold text-sm text-tertiary'>Who we are</p>
                     <div className='flex justify-center'>
-                        <p className='text-3xl text-center font-semibold text-tertiary w-[600px]'>We want to be a <span className='text-primary'>church</span> that is relevant to our <span className='text-primary'>culture</span></p>
+                        <p className='text-3xl text-center font-semibold text-tertiary lg:w-[600px]'>We want to be a <span className='text-primary'>church</span> that is relevant to our <span className='text-primary'>culture</span></p>
                     </div>
 
-                    <div className="mt-10 flex justify-center">
-                        <div className='grid grid-cols-3 space-x-10 mt-12'>
+                    <div className="mt-4 lg:mt-10 flex justify-center">
+                        <div className='grid lg:grid-cols-3 space-y-6 lg:space-y-0 lg:space-x-10 mt-12'>
                             {
                                 feature.map((item) => (
                                     <div key={item.description} className='space-y-2'>

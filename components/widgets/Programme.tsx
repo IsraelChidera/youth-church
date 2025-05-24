@@ -14,12 +14,12 @@ const Programme = () => {
                     </div>
                 </div>
 
-                <div className="mt-10 grid grid-cols-2 gap-4">
+                <div className="mt-10 grid lg:grid-cols-2 space-y-6 lg:space-y-0 gap-4">
                     <div>
                         <Image src="/youth-bg.jpg" className='h-fit rounded-br-[80px]' alt="about us" width={600} height={200} />
                     </div>
 
-                    <div className='space-y-4'>
+                    <div className='space-y-6 lg:space-y-4'>
                         <div>
                             <h3 className='font-semibold text-tertiary text-xl mb-2'>Sunday Service</h3>
                             <p className='text-base'>Libero, ipsum quo alias vero incidunt quisquam debitis maxime minima ullam amet dolor placeat voluptatem odit delectus possimus vitae.</p>

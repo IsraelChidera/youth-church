@@ -28,12 +28,13 @@ const Navbar = () => {
     return (
         <nav className='relative w-full py-6'>
             <Container>
-                <div className='flex items-center justify-between'>                    
-                    <Image src="/logo.png" alt="logo" width={312} height={55} />
+                <div className='flex items-center justify-between'>
+                    <Image src="/logo.png" className="lg:block hidden" alt="logo" width={212} height={35} />
+                    <Image src="/logo.png" className="block lg:hidden" alt="logo" width={112} height={35} />
 
 
-                    <div className='flex items-center space-x-6'>
-                        <ul className='flex items-center space-x-6'>
+                    <div className='block lg:flex items-center space-x-6'>
+                        <ul className='hidden lg:flex items-center space-x-6'>
                             {
                                 navLinks.map((link) => (
                                     <li key={link.name} className='mx-2'>
@@ -45,7 +46,7 @@ const Navbar = () => {
                             }
                         </ul>
 
-                        <div>
+                        <div className="flex lg:block">
                             <Button className='px-6 py-2 text-[14px] font-medium' classType='primary'>Sign up</Button>
                         </div>
                     </div>

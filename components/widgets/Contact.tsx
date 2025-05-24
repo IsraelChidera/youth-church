@@ -79,7 +79,7 @@ const Contact = () => {
     return (
         <section id="contact" className='bg-[#f2f4ff] py-20'>
             <Container className=' relative pb-10'>
-                <div className="grid grid-cols-2 gap-4">
+                <div className="grid lg:grid-cols-2 space-y-0 lg:space-y-6 gap-4">
                     <div>
                         <div className='mb-2'>
                             <p className='text-sm lg:text-base text-primary font-semibold w-fit'>
@@ -89,7 +89,7 @@ const Contact = () => {
 
                         <div>
                             <div className="flex items-center space-x-1">
-                                <h2 className='uppercase text-[30px] lg:text-[40px] font-bold mt-'>
+                                <h2 className='uppercase text-[30px] lg:text-[40px] font-bold'>
                                     <span className=''>Worship</span> with us
                                 </h2>
 
@@ -97,7 +97,7 @@ const Contact = () => {
                             </div>
                         </div>
 
-                        <div className='mt-2'>
+                        <div>
                             <p className="flex items-center space-x-2 ">
                                 <Link className="block hover:underline underline-offset-4" href="https://www.instagram.com/lumixus_studio/">
                                     Instagram
@@ -110,7 +110,7 @@ const Contact = () => {
                         </div>
                     </div>
 
-                    <div>
+                    <div className="mt-6 lg:mt-0">
                         <form className="text-text space-y-10 bg-white py-10 px-4 lg:px-[40px] lg:py-[40px] rounded-lg border border-[#EEEEEE]">
                             <div>
                                 <label htmlFor="name" className="block text-lg lg:text-[20px]">Name</label>
