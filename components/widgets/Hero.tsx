@@ -3,6 +3,7 @@ import Navbar from './Navbar'
 import Container from '@/components/elements/Container';
 import Button from '@/components/elements/Button';
 import Link from 'next/link';
+import { PiTelevisionSimpleFill } from 'react-icons/pi';
 
 const Hero = () => {
     return (
@@ -11,16 +12,22 @@ const Hero = () => {
             <Container className='flex items-center h-full'>
                 <div className="w-[500px]">
                     <h1 className='text-white text-4xl lg:text-5xl font-bold lg:font-semibold '>
-                        It's Okay to not be okay.
-                        God meets you where you are.
+                        Empowering a Generation for Christ 
                     </h1>
                     <p className='mt-2 text-white text-base lg:text-[18px]'>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam iste ipsum iure. Nemo nisi inventore rerum, eius tempora nihil facere!
+                        We are a dynamic and spirit-led community of young people passionate about loving God, serving people, and influencing culture for Christ.
                     </p>
 
-                    <Link href="#contact">
-                        <Button classType='primary' className="py-2.5 px-[20px] mt-4">
+                    <Link href="#contact" className='mt-4 flex items-center space-x-4'>
+                        <Button classType='primary' className="py-2.5 px-[20px] ">
                             Contact us
+                        </Button>
+
+                        <Button classType='secondary' className="text-white py-2.5 px-[20px]">
+                            <div className="flex items-center space-x-2">
+                                <PiTelevisionSimpleFill className='text-primary' />
+                                <span className="">Watch online</span>
+                            </div>
                         </Button>
                     </Link>
                 </div>

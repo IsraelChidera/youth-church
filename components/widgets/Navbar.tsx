@@ -8,8 +8,8 @@ const Navbar = () => {
 
     const navLinks = [
         {
-            name: "Benefits",
-            link: "/"
+            name: "About Us",
+            link: "#about"
         },
         {
             name: "Product",
@@ -47,7 +47,7 @@ const Navbar = () => {
                         </ul>
 
                         <div className="flex lg:block">
-                            <Button className='px-6 py-2 text-[14px] font-medium' classType='primary'>Sign up</Button>
+                            <Button className='px-6 py-2 text-[14px] font-medium' classType='primary'>Contact us</Button>
                         </div>
                     </div>
                 </div>

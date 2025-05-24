@@ -31,10 +31,10 @@ const Footer = () => {
                             Quick Links
                         </li>
                         <li>
-                            <Link href="#" className='text-gray-500 hover:text-primary transition-colors duration-200 font-medium'>Home</Link>
+                            <Link href="/" className='text-gray-500 hover:text-primary transition-colors duration-200 font-medium'>Home</Link>
                         </li>
                         <li>
-                            <Link href="#" className='text-gray-500 hover:text-primary transition-colors duration-200 font-medium'>About Us</Link>
+                            <Link href="#about" className='text-gray-500 hover:text-primary transition-colors duration-200 font-medium'>About Us</Link>
                         </li>
                     </ul>
 

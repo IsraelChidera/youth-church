@@ -1,9 +1,36 @@
+"use client"
+
 import React from 'react';
 import Container from '@/components/elements/Container';
 import Image from 'next/image';
 import { MdOutlineArrowOutward } from 'react-icons/md';
+import { motion } from 'motion/react';
+
 
 const Programme = () => {
+
+    const programmes = [
+        {
+            id: 1,
+            title: "Youth Sunday",
+            description: "Every third Sunday of the month",
+        },
+        {
+            id: 2,
+            title: "Youth Bible Study",
+            description: "Wednesday, 8-9pm",
+        },
+        {
+            id: 3,
+            title: "Youth Prayer Meeting",
+            description: "Friday, 7-8pm",
+        },
+        {
+            id: 4,
+            title: "Mission and Outreach Projects",
+            description: "Monthly, varies",
+        },
+    ]
     return (
         <section className=' py-30'>
             <Container>
@@ -14,29 +41,37 @@ const Programme = () => {
                     </div>
                 </div>
 
-                <div className="mt-10 grid lg:grid-cols-2 space-y-6 lg:space-y-0 gap-4">
+                <div className="mt-10 grid lg:grid-cols-2 space-y-6 lg:space-y-0 lg:gap-10">
                     <div>
                         <Image src="/youth-bg.jpg" className='h-fit rounded-br-[80px]' alt="about us" width={600} height={200} />
                     </div>
 
                     <div className='space-y-6 lg:space-y-4'>
-                        <div>
-                            <h3 className='font-semibold text-tertiary text-xl mb-2'>Sunday Service</h3>
-                            <p className='text-base'>Libero, ipsum quo alias vero incidunt quisquam debitis maxime minima ullam amet dolor placeat voluptatem odit delectus possimus vitae.</p>
-                            <MdOutlineArrowOutward className='text-4xl mt-2 text-primary bg-[#f2f4ff] rounded-full p-1' />
-                        </div>
+                        {
+                            programmes?.map((item: any) => (
+                                <motion.div
+                                    initial={{
+                                        y: -100,
+                                        opacity: 0,
+                                    }}
+                                    transition={{
+                                        type: "spring",
+                                        stiffness: 100,
+                                        // damping: 70,
+                                        duration: 4,
+                                    }}
+                                    whileInView={{
+                                        y: 0,
+                                        opacity: 1
+                                    }}
+                                    className="" key={item.id}>
+                                    <h3 className='font-semibold text-tertiary text-xl mb-2'>{item.title}</h3>
+                                    <p className='text-base'>{item.description}</p>
+                                    <MdOutlineArrowOutward className='text-4xl mt-2 text-primary bg-[#f2f4ff] rounded-full p-1' />
+                                </motion.div>
+                            ))
+                        }
 
-                        <div>
-                            <h3 className='font-semibold text-tertiary text-xl mb-2'>Sunday Service</h3>
-                            <p className='text-base'>Libero, ipsum quo alias vero incidunt quisquam debitis maxime minima ullam amet dolor placeat voluptatem odit delectus possimus vitae.</p>
-                            <MdOutlineArrowOutward className='text-4xl mt-2 text-primary bg-[#f2f4ff] rounded-full p-1' />
-                        </div>
-
-                        <div>
-                            <h3 className='font-semibold text-tertiary text-xl mb-2'>Sunday Service</h3>
-                            <p className='text-base'>Libero, ipsum quo alias vero incidunt quisquam debitis maxime minima ullam amet dolor placeat voluptatem odit delectus possimus vitae.</p>
-                            <MdOutlineArrowOutward className='text-4xl mt-2 text-primary bg-[#f2f4ff] rounded-full p-1' />
-                        </div>
                     </div>
                 </div>
             </Container>

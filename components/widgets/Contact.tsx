@@ -4,6 +4,7 @@ import Container from '@/components/elements/Container';
 import Button from '@/components/elements/Button';
 import { FiArrowDownRight } from "react-icons/fi";
 import Link from 'next/link';
+import { motion } from 'motion/react';
 
 
 type InitialValuesProps = {
@@ -80,7 +81,22 @@ const Contact = () => {
         <section id="contact" className='bg-[#f2f4ff] py-20'>
             <Container className=' relative pb-10'>
                 <div className="grid lg:grid-cols-2 space-y-0 lg:space-y-6 gap-4">
-                    <div>
+                    <motion.div
+                        initial={{
+                            x: -100,
+                            opacity: 0,
+                        }}
+                        transition={{
+                            type: "spring",
+                            stiffness: 100,
+                            // damping: 70,
+                            duration: 4,
+                        }}
+                        whileInView={{
+                            x: 0,
+                            opacity: 1
+                        }}
+                    >
                         <div className='mb-2'>
                             <p className='text-sm lg:text-base text-primary font-semibold w-fit'>
                                 Contact us
@@ -99,18 +115,34 @@ const Contact = () => {
 
                         <div>
                             <p className="flex items-center space-x-2 ">
-                                <Link className="block hover:underline underline-offset-4" href="https://www.instagram.com/lumixus_studio/">
+                                <Link className="block hover:underline underline-offset-4" href="https://www.instagram.com/">
                                     Instagram
                                 </Link>
                                 <span className="block ">|</span>
-                                <Link className="block hover:underline underline-offset-4" href="mailto:lumixusstudio@gmail.com">
+                                <Link className="block hover:underline underline-offset-4" href="mailto:rccg@gmail.com">
                                     Email us
                                 </Link>
                             </p>
                         </div>
-                    </div>
+                    </motion.div>
 
-                    <div className="mt-6 lg:mt-0">
+                    <motion.div
+                        initial={{
+                            y: -100,
+                            opacity: 0,
+                        }}
+                        transition={{
+                            type: "spring",
+                            stiffness: 100,
+                            // damping: 70,
+                            duration: 4,
+                        }}
+                        whileInView={{
+                            y: 0,
+                            opacity: 1
+                        }}
+                        className="mt-6 lg:mt-0"
+                    >
                         <form className="text-text space-y-10 bg-white py-10 px-4 lg:px-[40px] lg:py-[40px] rounded-lg border border-[#EEEEEE]">
                             <div>
                                 <label htmlFor="name" className="block text-lg lg:text-[20px]">Name</label>
@@ -145,7 +177,7 @@ const Contact = () => {
                                 </Button>
                             </div>
                         </form>
-                    </div>
+                    </motion.div>
                 </div>
             </Container>
         </section >
