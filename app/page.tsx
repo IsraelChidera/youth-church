@@ -3,6 +3,7 @@ import Contact from "@/components/widgets/Contact";
 import Feature from "@/components/widgets/Feature";
 import Footer from "@/components/widgets/Footer";
 import Hero from "@/components/widgets/Hero";
+import MapSection from "@/components/widgets/MapSection";
 import Programme from "@/components/widgets/Programme";
 
 export default function Home() {
@@ -11,8 +12,9 @@ export default function Home() {
       <Hero />
       <Feature />
       <About />
-      <Programme />
+      <Programme /> 
       <Contact />
+      <MapSection />
       <Footer />
     </main>
   );
