@@ -13,7 +13,7 @@ const MapSection = () => {
                     {/* Location Info */}
                     <motion.div
                         initial={{
-                            x: -100,
+                            y: -100,
                             opacity: 0,
                         }}
                         transition={{
@@ -22,7 +22,7 @@ const MapSection = () => {
                             duration: 4,
                         }}
                         whileInView={{
-                            x: 0,
+                            y: 0,
                             opacity: 1
                         }}
                         className="space-y-8"
@@ -80,7 +80,7 @@ const MapSection = () => {
                     {/* Map */}
                     <motion.div
                         initial={{
-                            x: 100,
+                            y: 100,
                             opacity: 0,
                         }}
                         transition={{
@@ -89,7 +89,7 @@ const MapSection = () => {
                             duration: 4,
                         }}
                         whileInView={{
-                            x: 0,
+                            y: 0,
                             opacity: 1
                         }}
                         className="h-[400px] lg:h-[500px] rounded-lg overflow-hidden shadow-lg"
