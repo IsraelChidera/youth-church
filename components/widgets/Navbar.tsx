@@ -10,7 +10,7 @@ const Navbar = () => {
         {
             name: "About Us",
             link: "#about-us"
-        },       
+        },
         {
             name: "Programmes",
             link: "#programmes"
@@ -43,7 +43,9 @@ const Navbar = () => {
                         </ul>
 
                         <div className="flex lg:block">
-                            <Button className='px-6 py-2 text-[14px] font-medium' classType='primary'>Contact us</Button>
+                            <Link href="#contact" className='hidden lg:block'>
+                                <Button className='px-6 py-2 text-[14px] font-medium' classType='primary'>Contact us</Button>
+                            </Link>
                         </div>
                     </div>
                 </div>
