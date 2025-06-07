@@ -119,9 +119,9 @@ const Contact = () => {
                                     Instagram
                                 </Link>
                                 <span className="block ">|</span>
-                                <Link className="block hover:underline underline-offset-4" href="mailto:rccg@gmail.com">
+                                <a className="block hover:underline underline-offset-4" href="mailto:rccg.kogp.yaya@gmail.com">
                                     Email us
-                                </Link>
+                                </a>
                             </p>
                         </div>
                     </motion.div>

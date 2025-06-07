@@ -8,15 +8,15 @@ const Feature = () => {
 
     const feature = [
         {
-            image: "/logo.png",
+            image: "/rccg-logo1.png",
             description: `RCCG Youths UK is the youth expression of the Redeemed Christian Church of God (RCCG) in the United Kingdom. We are a dynamic and spirit-led community of young people passionate about loving God, serving people, and influencing culture for Christ.`
         },
         {
-            image: "/logo.png",
+            image: "/rccg-logo1.png",
             description: `We believe that every young person is uniquely gifted and called to impact their world. Through our various fellowships, events, and discipleship programs, we aim to provide a safe and vibrant environment where young believers can encounter God, build meaningful relationships, and grow in faith.`
         },
         {
-            image: "/logo.png",
+            image: "/rccg-logo1.png",
             description: `Our activities range from worship services, Bible study groups, mentorship sessions, conferences, outreach programs, creative arts, tech initiatives, and more.`
         }
     ]

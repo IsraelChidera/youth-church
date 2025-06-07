@@ -12,27 +12,27 @@ const Programme = () => {
     const programmes = [
         {
             id: 1,
-            title: "Youth Sunday",
-            description: "Every third Sunday of the month",
+            title: "Sunday Worship Service",
+            description: "Every Sunday, 10am",
         },
         {
             id: 2,
             title: "Youth Bible Study",
-            description: "Wednesday, 8-9pm",
+            description: "Tuesday, 7-8pm",
         },
         {
             id: 3,
             title: "Youth Prayer Meeting",
-            description: "Friday, 7-8pm",
+            description: "Thursday, 7-8pm",
         },
         {
             id: 4,
-            title: "Mission and Outreach Projects",
-            description: "Monthly, varies",
+            title: "Monthly Thanksgiving",
+            description: "First Sunday of the Month",
         },
     ]
     return (
-        <section className=' py-30'>
+        <section id="#programmes" className=' py-30'>
             <Container>
                 <div>
                     <p className='mb-2 text-center font-semibold text-sm text-primary'>Our programmes</p>
@@ -43,7 +43,7 @@ const Programme = () => {
 
                 <div className="mt-10 grid lg:grid-cols-2 space-y-6 lg:space-y-0 lg:gap-10">
                     <div>
-                        <Image src="/youth-bg.jpg" className='h-fit rounded-br-[80px]' alt="about us" width={600} height={200} />
+                        <Image src="/rccg-youth.jpg" className='h-fit rounded-br-[80px]' alt="about us" width={600} height={200} />
                     </div>
 
                     <div className='space-y-6 lg:space-y-4'>

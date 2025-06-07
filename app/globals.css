@@ -25,4 +25,9 @@
 body {
   color: #343434;
   font-family: Arial, Helvetica, sans-serif;
+  scroll-behavior: smooth;
+}
+
+html {
+  scroll-behavior: smooth;
 }

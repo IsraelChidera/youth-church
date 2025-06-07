@@ -9,19 +9,15 @@ const Navbar = () => {
     const navLinks = [
         {
             name: "About Us",
-            link: "#about"
+            link: "#about-us"
+        },       
+        {
+            name: "Programmes",
+            link: "#programmes"
         },
         {
-            name: "Product",
-            link: "/about"
-        },
-        {
-            name: "Testimonials",
-            link: "/contact"
-        },
-        {
-            name: "Contact",
-            link: "/blog"
+            name: "Find us",
+            link: "#find-us"
         }
     ]
 
@@ -29,8 +25,8 @@ const Navbar = () => {
         <nav className='relative w-full py-6'>
             <Container>
                 <div className='flex items-center justify-between'>
-                    <Image src="/logo.png" className="lg:block hidden" alt="logo" width={212} height={35} />
-                    <Image src="/logo.png" className="block lg:hidden" alt="logo" width={112} height={35} />
+                    <Image src="/rccg-logo1.png" className="lg:block hidden" alt="logo" width={212} height={35} />
+                    <Image src="/rccg-logo1.png" className="block lg:hidden" alt="logo" width={112} height={35} />
 
 
                     <div className='block lg:flex items-center space-x-6'>

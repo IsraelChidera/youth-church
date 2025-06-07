@@ -7,7 +7,7 @@ import { motion } from 'motion/react';
 
 const MapSection = () => {
     return (
-        <section className='py-20 bg-white'>
+        <section id="find-us" className='py-20 bg-white'>
             <Container>
                 <div className="grid lg:grid-cols-2 gap-10 items-center">
                     {/* Location Info */}
@@ -45,9 +45,9 @@ const MapSection = () => {
                                 <div>
                                     <h3 className='font-semibold text-tertiary text-lg'>Address</h3>
                                     <p className='text-gray-600'>
-                                        The old church building,<br />
-                                        86 Newport Road<br />
-                                        Cardiff CF24 1PU
+                                        Mackintosh Community Centre,<br />
+                                        38 Keppoch St,<br />
+                                        Cardiff CF24 3JW
                                     </p>
                                 </div>
                             </div>
@@ -57,9 +57,9 @@ const MapSection = () => {
                                 <div>
                                     <h3 className='font-semibold text-tertiary text-lg'>Service Times</h3>
                                     <div className='text-gray-600 space-y-1'>
-                                        <p>Youth Sunday: Every 3rd Sunday</p>
-                                        <p>Bible Study: Wednesday 8-9pm</p>
-                                        <p>Prayer Meeting: Friday 7-8pm</p>
+                                        <p>Sunday Worship Service, 10am</p>
+                                        <p>Youth Bible Study: Tuesday 7-8pm</p>
+                                        <p>Youth Prayer Meeting: Thursday 7-8pm</p>
                                     </div>
                                 </div>
                             </div>
@@ -69,8 +69,8 @@ const MapSection = () => {
                                 <div>
                                     <h3 className='font-semibold text-tertiary text-lg'>Contact</h3>
                                     <div className='text-gray-600 space-y-1'>
-                                        <p>+234 123 4567</p>
-                                        <p>info@rccg.com</p>
+                                        <p>07795903780</p>
+                                        <p>rccg.kogp.yaya@gmail.com</p>
                                     </div>
                                 </div>
                             </div>
@@ -126,7 +126,8 @@ const MapSection = () => {
                     className="mt-10 text-center"
                 >
                     <a 
-                        href="https://www.google.com/maps/dir//86+Newport+Rd,+Cardiff+CF24+1PU,+UK" 
+                        // href="https://www.google.com/maps/dir//86+Newport+Rd,+Cardiff+CF24+1PU,+UK" 
+                        href={`https://maps.app.goo.gl/XnJL8zoVa1t49yvM6`}
                         target="_blank" 
                         rel="noopener noreferrer"
                         className="inline-flex items-center space-x-2 bg-primary text-white px-6 py-3 rounded-lg hover:bg-primary/90 transition-colors duration-200 font-semibold"

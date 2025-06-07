@@ -11,8 +11,8 @@ const Footer = () => {
             <Container>
                 <div className='grid grid-cols-1 lg:grid-cols-5 gap-10'>
                     <div className='col-span-2'>
-                        <Image src="/logo.png" className='lg:block hidden' alt="logo" width={312} height={55} />
-                        <Image src="/logo.png" className='block lg:hidden' alt="logo" width={212} height={45} />
+                        <Image src="/rccg-logo1.png" className='lg:block hidden' alt="logo" width={312} height={55} />
+                        <Image src="/rccg-logo1.png" className='block lg:hidden' alt="logo" width={212} height={45} />
 
                         <p className='text-sm lg:text-[18px] text-gray-500 mt-2'>
                             We are committed to preaching the undiluted word of God. We aim at returning the heart of the people of God back to bible Christianity.
@@ -34,7 +34,13 @@ const Footer = () => {
                             <Link href="/" className='text-gray-500 hover:text-primary transition-colors duration-200 font-medium'>Home</Link>
                         </li>
                         <li>
-                            <Link href="#about" className='text-gray-500 hover:text-primary transition-colors duration-200 font-medium'>About Us</Link>
+                            <Link href="#about-us" className='text-gray-500 hover:text-primary transition-colors duration-200 font-medium'>About Us</Link>
+                        </li>
+                        <li>
+                            <Link href="#programmes" className='text-gray-500 hover:text-primary transition-colors duration-200 font-medium'>Programmes</Link>
+                        </li>
+                        <li>
+                            <Link href="#find-us" className='text-gray-500 hover:text-primary transition-colors duration-200 font-medium'>Find us</Link>
                         </li>
                     </ul>
 
@@ -47,8 +53,7 @@ const Footer = () => {
                             <FaPhone className='text-primary ' />
 
                             <div>
-                                <p className='text-gray-500 hover:text-primary transition-colors duration-200 font-medium'>+234 123 4567</p>
-                                <p className='text-gray-500 hover:text-primary transition-colors duration-200 font-medium'>+234 123 4567</p>
+                                <a href="tel:07795903780" className='block text-gray-500 hover:text-primary transition-colors duration-200 font-medium'>07795903780</a>
                             </div>
                         </li>
 
@@ -56,8 +61,7 @@ const Footer = () => {
                             <FaMailBulk className='text-primary ' />
 
                             <div>
-                                <p className='text-gray-500 hover:text-primary transition-colors duration-200 font-medium'>info@rccg.com</p>
-                                <p className='text-gray-500 hover:text-primary transition-colors duration-200 font-medium'>info@youthchurch.com</p>
+                                <a href="mailto:rccg.kogp.yaya@gmail.com?subject=Inquiry&body=Hello, I would like to know more about..." className='text-gray-500 hover:text-primary transition-colors duration-200 font-medium'>rccg.kogp.yaya@gmail.com</a>
                             </div>
                         </li>
 
@@ -65,7 +69,9 @@ const Footer = () => {
                             <FaLocationPin className='text-primary ' />
 
                             <div>
-                                <p className='text-gray-500 hover:text-primary transition-colors duration-200 font-medium'>The old church building, 86 Newport Road Cardiff CF24 1PU</p>
+                                <p className='text-gray-500 hover:text-primary transition-colors duration-200 font-medium'>
+                                    Mackintosh Community Centre, 38 Keppoch St, Cardiff CF24 3JW
+                                </p>
                             </div>
                         </li>
                     </ul>
