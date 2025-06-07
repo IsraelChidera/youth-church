@@ -37,7 +37,7 @@ const Programme = () => {
                 <div>
                     <p className='mb-2 text-center font-semibold text-sm text-primary'>Our programmes</p>
                     <div className='flex justify-center'>
-                        <p className='text-3xl text-center font-semibold text-tertiary w-[600px]'>Worship with us</p>
+                        <p className='text-3xl text-center font-semibold text-tertiary lg:w-[600px]'>Worship with us</p>
                     </div>
                 </div>
 
